@@ -11,7 +11,7 @@ plot2 <- function(dataFile) {
   dates <- as.POSIXct(dates, format = '%d/%m/%Y %H:%M:%S')
   # Plotting
   png(file='plot2.png')
-  plot(ds, data$Global_active_power, type = 'l', xlab = '', 
+  plot(dates, data$Global_active_power, type = 'l', xlab = '', 
        ylab = 'Global Active Power (kilowatts)')
   dev.off()
 }
